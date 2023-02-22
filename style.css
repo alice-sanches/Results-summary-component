@@ -190,6 +190,14 @@ button {
     align-self: flex-end;
 }
 
+button:hover {
+    background: linear-gradient(
+        0deg,
+        hsl(241, 81%, 54%) 25%,
+        hsl(252, 100%, 67%) 100%
+    )
+}
+
 
 /*desktop or large screen styles*/
 
