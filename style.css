@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*mobile styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Hanken Grotesk", sans-serif;
+    box-sizing: border-box;
+}
+
+h2, p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2.number {
+    font-size: 60px;
+    color:hsl(0, 0%, 100%);
+}
+
+
+
+.blue-container {
+    height: 40%;
+    background: linear-gradient(
+        0deg,
+        hsl(241, 81%, 54%) 25%,
+        hsl(252, 100%, 67%) 100%
+    );
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 24px 48px 24px 48px; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.blue-container > h1, p.small-text {
+    color: hsl(241, 100%, 89%);
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        hsla(241, 72%, 46%, 0),
+        hsla(256, 72%, 46%, 1)
+    );
+    box-sizing: border-box;
+    text-align: center;
+    padding: 25px;
+    }
+
+div.circle > h2, p {
+    margin: auto; 
+}
+
+div.circle > .small-text {
+    color: hsla(241, 100%, 89%, 50%);
+    font-size: 14px;
+}
+
+.qualitative-result {
+    font-size: 24px;
+    color:hsl(0, 0%, 100%);
+}
+
+.summary-details-container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.summary-details-container > h1 {
+    color:hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.colored-rectangle-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+div.colored-rectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 50px;
+    margin: 0;
+    padding: 0 16px;
+    gap: 8px;
+}
+
+div.colored-rectangle > p {
+    font-size: 16px;
+    margin: 0;
+}
+
+div > p.detail-result {
+    margin-left: auto; 
+}
+
+div#red > .detail-label {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+div#yellow > .detail-label {
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+div#blue > .detail-label {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+div#green > .detail-label {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+div#red {
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+
+div#yellow {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+div#blue {
+    background-color: hsla(234, 85%, 45%, 10%);
+}
+
+div#green {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+span.result {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.detail-result {
+    color: hsla(224, 30%, 27%, 50%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+
+/*desktop or large screen styles*/
+
+@media (min-width: 700px) { 
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    main {
+        background-color: hsl(221, 100%, 96%);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-container {
+        flex-direction: row;
+        width: 700px;
+        height: 400px;
+        margin: auto;
+        border-radius: 30px;
+    }
+    
+    
+    .blue-container {
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        padding: 36px 48px 36px 48px;
+    }
+
+    .summary-details-container {
+        width: 50%;
+    }
+}
